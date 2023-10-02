@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Runeterra universe</string>
+    <string name="Start">Commencer</string>
+    <string name="Select_test">Choisit le test</string>
+    <string name="Résultat">Résultat des anciens test</string>
+    <string name="Leave">Quitter</string>
+</resources>
