@@ -53,6 +53,7 @@
         android:id="@+id/spinner"
         android:layout_width="312dp"
         android:layout_height="27dp"
+        android:entries="@array/array_spinner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
