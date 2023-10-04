@@ -8,9 +8,23 @@
         <item>Région</item>
         <item>Race</item>
     </string-array>
+
     <string name="QuestionReg1">Été ou Hiver?</string>
-    <string name="chaud">Été</string>
-    <string name="froid">Hiver</string>
-    <string name="desert">désert</string>
-    <string name="banquise">banquise</string>
+    <string name="But_ete">Été</string>
+    <string name="But_hiver">Hiver</string>
+    <string name="Img_ete">désert</string>
+    <string name="Img_hiver">banquise</string>
+
+    <string name="QuestionReg2">Mer ou Montagne?</string>
+    <string name="switchMerMont">.</string>
+    <string name="Img_Mer">mer</string>
+    <string name="Img_Montagne">mont</string>
+
+    <string name="QuestionReg3">Vivre dans une grande ville, à la campagne ou dans la nature ?</string>
+    <string name="But_Ville">Ville</string>
+    <string name="But_Campagne">Campagne</string>
+    <string name="But_Nature">Nature</string>
+    <string name="Img_ville">vil</string>
+    <string name="Img_campagne">camp</string>
+    <string name="Img_nature">natu</string>
 </resources>
