@@ -8,4 +8,9 @@
         <item>Région</item>
         <item>Race</item>
     </string-array>
+    <string name="QuestionReg1">Été ou Hiver?</string>
+    <string name="chaud">Été</string>
+    <string name="froid">Hiver</string>
+    <string name="desert">désert</string>
+    <string name="banquise">banquise</string>
 </resources>
