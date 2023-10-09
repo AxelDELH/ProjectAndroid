@@ -30,4 +30,12 @@
     <string name="Img_ville">vil</string>
     <string name="Img_campagne">camp</string>
     <string name="Img_nature">natu</string>
+
+    <!-- QuestionSeekbar -->
+    <string name="QuestionSeekbar1">Sur une échelle de 1 à 10. De quelle taille te considères-tu ?</string>
+    <string name="seek_bar_value1">5</string>
+    <string name="QuestionSeekbar2">Sur une échelle de 1 à 10. A quel point croyez-vous au surnaturel</string>
+    <string name="seek_bar_value2">5</string>
+    <string name="ButtonNextSeekbar">Suivant</string>
+    <string name="ButtonBackSeekbar">Retour</string>
 </resources>
