@@ -14,15 +14,15 @@
         android:layout_height="55dp"
         android:layout_below="@id/seek_bar"
         android:layout_centerHorizontal="true"
-        android:text="5"
+        android:text="@string/seek_bar_value1"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_next_seekbar"
+        app:layout_constraintBottom_toTopOf="@+id/seek_bar2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seek_bar"
-        app:layout_constraintVertical_bias="0.576"
+        app:layout_constraintVertical_bias="0.903"
         tools:ignore="MissingConstraints" />
 
     <SeekBar
@@ -30,7 +30,7 @@
         style="@android:style/Widget.SeekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/question2_seekbar"
+        android:layout_below="@id/question1_seekbar"
         android:layout_marginTop="44dp"
         android:layout_marginBottom="148dp"
         android:max="10"
@@ -42,24 +42,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question2_seekbar"
+        app:layout_constraintTop_toBottomOf="@+id/question1_seekbar"
         app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/question1_seekbar"
-        android:layout_width="330dp"
-        android:layout_height="83dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:text="Sur une échelle de 1 à 10. A quel point croyez-vous au surnaturel"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/seek_bar_value2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seek_bar"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -67,7 +51,24 @@
         android:layout_width="330dp"
         android:layout_height="83dp"
         android:layout_centerHorizontal="true"
-        android:text="Sur une échelle de 1 à 10. De quelle taille te considères-tu ?"
+        android:layout_marginTop="24dp"
+        android:text="@string/QuestionSeekbar2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/seek_bar_value2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seek_bar"
+        app:layout_constraintVertical_bias="0.28"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/question1_seekbar"
+        android:layout_width="330dp"
+        android:layout_height="83dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/QuestionSeekbar1"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/seek_bar"
@@ -110,25 +111,39 @@
         android:layout_height="55dp"
         android:layout_below="@id/seek_bar"
         android:layout_centerHorizontal="true"
-        android:text="5"
+        android:text="@string/seek_bar_value1"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/seek_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question2_seekbar"
+        app:layout_constraintTop_toBottomOf="@+id/question1_seekbar"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_next_seekbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Suivant"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/ButtonNextSeekbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_back_seekbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seek_bar2"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <Button
+        android:id="@+id/button_back_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ButtonBackSeekbar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.759"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seek_bar"
-        app:layout_constraintVertical_bias="0.87" />
+        app:layout_constraintTop_toBottomOf="@+id/seek_bar2"
+        app:layout_constraintVertical_bias="0.51" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

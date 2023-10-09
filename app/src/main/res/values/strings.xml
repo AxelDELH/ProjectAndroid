@@ -34,6 +34,14 @@
     <string name="Img_nature">natu</string>
     <string name="Back3">Retour</string>
 
+    <!-- QuestionSeekbar -->
+    <string name="QuestionSeekbar1">Sur une échelle de 1 à 10. De quelle taille te considères-tu ?</string>
+    <string name="seek_bar_value1">5</string>
+    <string name="QuestionSeekbar2">Sur une échelle de 1 à 10. A quel point croyez-vous au surnaturel</string>
+    <string name="seek_bar_value2">5</string>
+    <string name="ButtonNextSeekbar">Suivant</string>
+    <string name="ButtonBackSeekbar">Retour</string>
+
     <string name="Resultat">Nom du résultat</string>
     <string name="ImgRes">Image du résultat</string>
     <string name="Back4">Retour</string>
