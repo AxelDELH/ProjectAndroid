@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class TestRegion1Activity extends AppCompatActivity {
+public class QuestionRadio extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test_region1);
+        setContentView(R.layout.activity_question_radio);
     }
 }

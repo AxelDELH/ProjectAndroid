@@ -50,7 +50,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerChoix"
         android:layout_width="312dp"
         android:layout_height="48dp"
         android:entries="@array/array_spinner"
@@ -62,7 +62,7 @@
         app:layout_constraintVertical_bias="0.531" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextPseudo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
@@ -70,7 +70,7 @@
         android:inputType="text"
         android:minHeight="48dp"
         android:text="@string/Name"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerChoix"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"

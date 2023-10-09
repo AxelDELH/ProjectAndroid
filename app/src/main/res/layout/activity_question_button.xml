@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TestRegion1Activity">
+    tools:context=".QuestionButton">
 
     <TextView
         android:id="@+id/textView2"
@@ -24,7 +24,7 @@
         android:layout_height="426dp"
         android:layout_marginTop="268dp"
         android:layout_marginEnd="20dp"
-        android:contentDescription="@string/ete"
+        android:contentDescription="@string/Img_ete"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,24 +38,24 @@
         android:layout_height="426dp"
         android:layout_marginTop="268dp"
         android:layout_marginEnd="4dp"
-        android:contentDescription="@string/banquise"
+        android:contentDescription="@string/Img_hiver"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonEte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="84dp"
         android:text="@string/But_ete"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/buttonHiver"
         app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonHiver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="76dp"
@@ -63,4 +63,14 @@
         android:text="@string/But_hiver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

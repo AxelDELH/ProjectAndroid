@@ -16,13 +16,13 @@
             android:name=".resultat"
             android:exported="false" />
         <activity
-            android:name=".TestRegion3"
+            android:name=".QuestionRadio"
             android:exported="false" />
         <activity
-            android:name=".TestRagion2Activity"
+            android:name=".QuestionSwitch"
             android:exported="false" />
         <activity
-            android:name=".TestRegion1Activity"
+            android:name=".QuestionButton"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

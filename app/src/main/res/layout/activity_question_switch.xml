@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TestRagion2Activity">
+    tools:context=".QuestionSwitch">
 
     <TextView
         android:id="@+id/textView3"
@@ -55,7 +55,7 @@
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttonNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -63,4 +63,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <Button
+        android:id="@+id/buttonBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/Back2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
