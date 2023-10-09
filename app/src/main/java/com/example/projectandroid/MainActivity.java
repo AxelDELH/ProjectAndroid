@@ -53,5 +53,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Quitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(Log_TAG, "bouton close");
+                finish();
+            }
+        });
+
     }
 }
