@@ -20,6 +20,7 @@ public class QuestionSwitch extends AppCompatActivity {
         setContentView(R.layout.activity_question_switch);
         this.Suivant = findViewById(R.id.buttonNext);
         this.Retour = findViewById(R.id.buttonBack2);
+        this.Mont = findViewById(R.id.switchMM);
 
 
         Suivant.setOnClickListener(new View.OnClickListener() {
@@ -35,7 +36,7 @@ public class QuestionSwitch extends AppCompatActivity {
 
                 // Créez une intention ver la question suivante
                 Intent intent = new Intent(QuestionSwitch.this, QuestionRadio.class);
-                Log.d(Log_TAG, "creation d'intent QSwitch");
+                Log.d(Log_TAG, "creation d'intent QRadio");
                 //transfer de la réponse à insérer ici ???
                 startActivity(intent);
                 Log.d(Log_TAG, "Lancement du test");

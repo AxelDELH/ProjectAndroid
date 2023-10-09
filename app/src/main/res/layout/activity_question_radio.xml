@@ -16,21 +16,21 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioButtonVille"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/But_Ville"
             tools:ignore="TextContrastCheck" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButtonCamp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/But_Campagne"
             tools:ignore="TextContrastCheck" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButtonNature"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/But_Nature" />
@@ -86,7 +86,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonAffRes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
@@ -94,4 +94,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/buttonBack3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/Back3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

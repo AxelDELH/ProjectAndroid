@@ -32,8 +32,10 @@
     <string name="Img_ville">vil</string>
     <string name="Img_campagne">camp</string>
     <string name="Img_nature">natu</string>
+    <string name="Back3">Retour</string>
 
     <string name="Resultat">Nom du résultat</string>
     <string name="ImgRes">Image du résultat</string>
+    <string name="Back4">Retour</string>
 
 </resources>
