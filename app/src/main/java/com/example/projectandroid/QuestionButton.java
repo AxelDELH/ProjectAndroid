@@ -28,7 +28,7 @@ public class QuestionButton extends AppCompatActivity {
                 // Créez une intention ver la question suivante
                 Intent intent = new Intent(QuestionButton.this, QuestionSwitch.class);
                 Log.d(Log_TAG, "creation d'intent QSwitch");
-                //transfer de la réponse à insérer ici ???
+                intent.putExtra("Res1","Été");
                 startActivity(intent);
                 Log.d(Log_TAG, "Lancement du test");
             }
@@ -39,7 +39,7 @@ public class QuestionButton extends AppCompatActivity {
                 // Créez une intention ver la question suivante
                 Intent intent = new Intent(QuestionButton.this, QuestionSwitch.class);
                 Log.d(Log_TAG, "creation d'intent QSwitch");
-                //transfer de la réponse à insérer ici ???
+                intent.putExtra("Res1","Hiver");
                 startActivity(intent);
                 Log.d(Log_TAG, "Lancement du test");
             }

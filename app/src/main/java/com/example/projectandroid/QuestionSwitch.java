@@ -14,10 +14,13 @@ public class QuestionSwitch extends AppCompatActivity {
     private Button Suivant;
     private Button Retour;
     private Switch Mont;
+    private String Res1;
+    private String Res2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_switch);
+        Res1 = getIntent().getStringExtra("Res1");
         this.Suivant = findViewById(R.id.buttonNext);
         this.Retour = findViewById(R.id.buttonBack2);
         this.Mont = findViewById(R.id.switchMM);
@@ -28,16 +31,17 @@ public class QuestionSwitch extends AppCompatActivity {
             public void onClick(View view) {
                 boolean choix  = Mont.isChecked();
                 if (choix){
-                    String Res = "Montagne";
+                    Res2 = "Montagne";
                 }
                 else {
-                    String Res = "Mer";
+                    Res2 = "Mer";
                 }
 
                 // Créez une intention ver la question suivante
                 Intent intent = new Intent(QuestionSwitch.this, QuestionRadio.class);
                 Log.d(Log_TAG, "creation d'intent QRadio");
-                //transfer de la réponse à insérer ici ???
+                intent.putExtra("Res1",Res1);
+                intent.putExtra("Res2",Res2);
                 startActivity(intent);
                 Log.d(Log_TAG, "Lancement du test");
             }
