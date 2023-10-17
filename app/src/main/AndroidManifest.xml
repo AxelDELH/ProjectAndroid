@@ -22,6 +22,9 @@
             android:name=".QuestionSwitch"
             android:exported="false" />
         <activity
+            android:name=".QuestionSeekbar"
+            android:exported="false" />
+        <activity
             android:name=".QuestionButton"
             android:exported="false" />
         <activity

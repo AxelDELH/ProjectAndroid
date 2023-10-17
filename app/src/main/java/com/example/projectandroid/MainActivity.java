@@ -40,13 +40,13 @@ public class MainActivity extends AppCompatActivity {
                 if (region) {
                     // Créez une intention pour démarrer le quizz des regions
                     Intent intent = new Intent(MainActivity.this, QuestionButton.class);
-                    Log.d(Log_TAG, "creation d'intent Race");
+                    Log.d(Log_TAG, "creation d'intent Region");
                     startActivity(intent);
                     Log.d(Log_TAG, "Lancement du test");
                 }else{
                     // Créez une intention pour démarrer le quizz des races
                     Intent intent = new Intent(MainActivity.this, QuestionSeekbar.class);
-                    Log.d(Log_TAG, "creation d'intent Région");
+                    Log.d(Log_TAG, "creation d'intent Race");
                     startActivity(intent);
                     Log.d(Log_TAG, "Lancement du test");
                 }
