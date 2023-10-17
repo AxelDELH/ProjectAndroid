@@ -32,16 +32,20 @@ public class QuestionSwitch extends AppCompatActivity {
                 boolean choix  = Mont.isChecked();
                 if (choix){
                     Res2 = "Montagne";
+                    Log.d(Log_TAG, "Choix Montagne");
                 }
                 else {
                     Res2 = "Mer";
+                    Log.d(Log_TAG, "Choix Mer");
                 }
 
                 // Créez une intention ver la question suivante
                 Intent intent = new Intent(QuestionSwitch.this, QuestionRadio.class);
                 Log.d(Log_TAG, "creation d'intent QRadio");
                 intent.putExtra("Res1",Res1);
+                Log.d(Log_TAG, "transfert Res 1");
                 intent.putExtra("Res2",Res2);
+                Log.d(Log_TAG, "transfert Res 2");
                 startActivity(intent);
                 Log.d(Log_TAG, "Lancement du test");
             }

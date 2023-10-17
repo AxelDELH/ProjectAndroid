@@ -32,50 +32,56 @@ public class resultat extends AppCompatActivity {
         this.Retour = findViewById(R.id.buttonBack4);
 
         if (test==1){
-            if (Res1=="Été"){
-                if (Res2=="Mer"){
-                    if (Res3=="Ville"){
+            Log.d(Log_TAG, "Lancement du if test");
+            if (Res1.equals("Été")){
+                Log.d(Log_TAG, "Lancement du if Ete");
+                if (Res2.equals("Mer")){
+                    Log.d(Log_TAG, "Lancement du if Mer");
+                    if (Res3.equals("Ville")){
+                        Log.d(Log_TAG, "Lancement du if Ville");
                         NomRes.setText("Piltover and Zaun");
                         //ImgRes.setImageDrawable(image P/Z);
-                    }else if (Res3=="Campagne"){
+                    }else if (Res3.equals("Campagne")){
                         NomRes.setText("Icathia");
                         //ImgRes.setImageDrawable(image Icathia);
-                    }else if (Res3=="Nature"){
+                    }else if (Res3.equals("Nature")){
                         NomRes.setText("Ixtal");
                         //ImgRes.setImageDrawable(image Ixtal);
                     }
-                }else if (Res2=="Montagne"){
-                    if (Res3=="Ville"){
+                }else if (Res2.equals("Montagne")){
+                    Log.d(Log_TAG, "Lancement du if Montagne");
+                    if (Res3.equals("Ville")){
                         NomRes.setText("Noxus");
                         //ImgRes.setImageDrawable(image Noxus);
-                    }else if (Res3=="Campagne"){
+                    }else if (Res3.equals("Campagne")){
                         NomRes.setText("Camavore");
                         //ImgRes.setImageDrawable(image Camrvore);
-                    }else if (Res3=="Nature"){
+                    }else if (Res3.equals("Nature")){
                         NomRes.setText("Shurima");
                         //ImgRes.setImageDrawable(image Shurima);
                     }
                 }
-            }else if (Res1=="Hiver"){
-                if (Res2=="Mer"){
-                    if (Res3=="Ville"){
+            }else if (Res1.equals("Hiver")){
+                Log.d(Log_TAG, "Lancement du if Hiver");
+                if (Res2.equals("Mer")){
+                    if (Res3.equals("Ville")){
                         NomRes.setText("Bildgewater");
                         //ImgRes.setImageDrawable(image P/Z);
-                    }else if (Res3=="Campagne"){
+                    }else if (Res3.equals("Campagne")){
                         NomRes.setText("Iles obscur");
                         //ImgRes.setImageDrawable(image iles obscur);
-                    }else if (Res3=="Nature"){
+                    }else if (Res3.equals("Nature")){
                         NomRes.setText("Ionia");
                         //ImgRes.setImageDrawable(image Ionia);
                     }
-                }else if (Res2=="Montagne"){
-                    if (Res3=="Ville"){
+                }else if (Res2.equals("Montagne")){
+                    if (Res3.equals("Ville")){
                         NomRes.setText("Demacia");
                         //ImgRes.setImageDrawable(image Demacia);
-                    }else if (Res3=="Campagne"){
+                    }else if (Res3.equals("Campagne")){
                         NomRes.setText("Targon");
                         //ImgRes.setImageDrawable(image Targon);
-                    }else if (Res3=="Nature"){
+                    }else if (Res3.equals("Nature")){
                         NomRes.setText("Frejlord");
                         //ImgRes.setImageDrawable(image Frejlord);
                     }

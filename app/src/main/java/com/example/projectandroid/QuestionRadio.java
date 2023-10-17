@@ -50,8 +50,11 @@ public class QuestionRadio extends AppCompatActivity {
                 Intent intent = new Intent(QuestionRadio.this, resultat.class);
                 Log.d(Log_TAG, "creation d'intent resultat");
                 intent.putExtra("Res1",Res1);
+                Log.d(Log_TAG, "transfert Res 1");
                 intent.putExtra("Res2",Res2);
+                Log.d(Log_TAG, "transfert Res 2");
                 intent.putExtra("Res2",Res3);
+                Log.d(Log_TAG, "transfert Res 3");
                 intent.putExtra("test", 1);
                 startActivity(intent);
                 Log.d(Log_TAG, "Lancement du test");
