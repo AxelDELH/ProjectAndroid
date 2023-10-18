@@ -38,23 +38,26 @@ public class QuestionRadio extends AppCompatActivity {
 
                 if (Ville.isChecked()){
                     Res3 = "Ville";
+                    Log.d(Log_TAG, "Choix :"+Res3);
                 }
                 else if (Nature.isChecked()) {
                     Res3 = "Nature";
+                    Log.d(Log_TAG, "Choix :"+Res3);
                 }
                 else if (Campagne.isChecked()) {
                     Res3 = "Campagne";
+                    Log.d(Log_TAG, "Choix :"+Res3);
                 }
 
                 // Créez une intention ver la question suivante
                 Intent intent = new Intent(QuestionRadio.this, resultat.class);
                 Log.d(Log_TAG, "creation d'intent resultat");
                 intent.putExtra("Res1",Res1);
-                Log.d(Log_TAG, "transfert Res 1");
+                Log.d(Log_TAG, "transfert :"+Res1);
                 intent.putExtra("Res2",Res2);
-                Log.d(Log_TAG, "transfert Res 2");
-                intent.putExtra("Res2",Res3);
-                Log.d(Log_TAG, "transfert Res 3");
+                Log.d(Log_TAG, "transfert :"+Res2);
+                intent.putExtra("Res3",Res3);
+                Log.d(Log_TAG, "transfert :"+Res3);
                 intent.putExtra("test", 1);
                 startActivity(intent);
                 Log.d(Log_TAG, "Lancement du test");

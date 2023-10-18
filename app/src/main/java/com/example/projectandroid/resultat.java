@@ -31,6 +31,7 @@ public class resultat extends AppCompatActivity {
         this.ImgRes = findViewById(R.id.imageView8);
         this.Retour = findViewById(R.id.buttonBack4);
 
+
         if (test==1){
             Log.d(Log_TAG, "Lancement du if test");
             if (Res1.equals("Été")){
@@ -61,27 +62,27 @@ public class resultat extends AppCompatActivity {
                         //ImgRes.setImageDrawable(image Shurima);
                     }
                 }
-            }else if (Res1.equals("Hiver")){
+            }else if (Res1.equals("Hiver")) {
                 Log.d(Log_TAG, "Lancement du if Hiver");
-                if (Res2.equals("Mer")){
-                    if (Res3.equals("Ville")){
+                if (Res2.equals("Mer")) {
+                    if (Res3.equals("Ville")) {
                         NomRes.setText("Bildgewater");
                         //ImgRes.setImageDrawable(image P/Z);
-                    }else if (Res3.equals("Campagne")){
+                    } else if (Res3.equals("Campagne")) {
                         NomRes.setText("Iles obscur");
                         //ImgRes.setImageDrawable(image iles obscur);
-                    }else if (Res3.equals("Nature")){
+                    } else if (Res3.equals("Nature")) {
                         NomRes.setText("Ionia");
                         //ImgRes.setImageDrawable(image Ionia);
                     }
-                }else if (Res2.equals("Montagne")){
-                    if (Res3.equals("Ville")){
+                } else if (Res2.equals("Montagne")) {
+                    if (Res3.equals("Ville")) {
                         NomRes.setText("Demacia");
                         //ImgRes.setImageDrawable(image Demacia);
-                    }else if (Res3.equals("Campagne")){
+                    } else if (Res3.equals("Campagne")) {
                         NomRes.setText("Targon");
                         //ImgRes.setImageDrawable(image Targon);
-                    }else if (Res3.equals("Nature")){
+                    } else if (Res3.equals("Nature")) {
                         NomRes.setText("Frejlord");
                         //ImgRes.setImageDrawable(image Frejlord);
                     }
