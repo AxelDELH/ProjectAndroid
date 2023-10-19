@@ -13,11 +13,14 @@ public class QuestionButton extends AppCompatActivity {
     private Button Ete;
     private Button Hiver;
     private Button retour;
+    private String Username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_button);
+        Username = getIntent().getStringExtra("Username");
+        Log.d(Log_TAG, "Pseudo"+Username);
         this.Ete = findViewById(R.id.buttonEte);
         this.Hiver = findViewById(R.id.buttonHiver);
         this.retour = findViewById(R.id.buttonBack);
@@ -29,6 +32,8 @@ public class QuestionButton extends AppCompatActivity {
                 Intent intent = new Intent(QuestionButton.this, QuestionSwitch.class);
                 Log.d(Log_TAG, "creation d'intent QSwitch");
                 intent.putExtra("Res1","Été");
+                intent.putExtra("Username",Username);
+                Log.d(Log_TAG, "transfert :"+Username);
                 startActivity(intent);
                 Log.d(Log_TAG, "Lancement du test");
             }

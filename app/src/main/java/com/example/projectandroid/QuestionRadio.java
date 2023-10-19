@@ -19,6 +19,7 @@ public class QuestionRadio extends AppCompatActivity {
     private String Res1;
     private String Res2;
     private String Res3;
+    private String Username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class QuestionRadio extends AppCompatActivity {
         setContentView(R.layout.activity_question_radio);
         Res1 = getIntent().getStringExtra("Res1");
         Res2 = getIntent().getStringExtra("Res2");
+        Username = getIntent().getStringExtra("Username");
         this.Resultat = findViewById(R.id.buttonAffRes);
         this.Retour = findViewById(R.id.buttonBack3);
         this.Ville = findViewById(R.id.radioButtonVille);
@@ -52,6 +54,8 @@ public class QuestionRadio extends AppCompatActivity {
                 // Créez une intention ver la question suivante
                 Intent intent = new Intent(QuestionRadio.this, resultat.class);
                 Log.d(Log_TAG, "creation d'intent resultat");
+                intent.putExtra("Username",Username);
+                Log.d(Log_TAG, "transfert :"+Username);
                 intent.putExtra("Res1",Res1);
                 Log.d(Log_TAG, "transfert :"+Res1);
                 intent.putExtra("Res2",Res2);

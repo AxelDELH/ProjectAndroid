@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button Result;
     private Spinner Choice;
     private EditText Pseudo;
+    private String Username;
     private boolean region = false;
 
     @Override
@@ -35,18 +36,24 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Identifier l’unité choisie en regardant quel valeur selectionner dans le spinner1.
                 String spinner = Choice.getSelectedItem().toString();
+                Username = Pseudo.getText().toString();
+                Log.d(Log_TAG, "Pseudo :"+Username);
                 region= spinner.equals("Région");
 
                 if (region) {
-                    // Créez une intention pour démarrer le quizz des regions
+                    // Créer une intention pour démarrer le quizz des regions
                     Intent intent = new Intent(MainActivity.this, QuestionButton.class);
                     Log.d(Log_TAG, "creation d'intent Region");
+                    intent.putExtra("Username",Username);
+                    Log.d(Log_TAG, "transfert :"+Username);
                     startActivity(intent);
                     Log.d(Log_TAG, "Lancement du test");
                 }else{
-                    // Créez une intention pour démarrer le quizz des races
+                    // Créer une intention pour démarrer le quizz des races
                     Intent intent = new Intent(MainActivity.this, QuestionSeekbar.class);
                     Log.d(Log_TAG, "creation d'intent Race");
+                    intent.putExtra("Username",Username);
+                    Log.d(Log_TAG, "transfert :"+Username);
                     startActivity(intent);
                     Log.d(Log_TAG, "Lancement du test");
                 }

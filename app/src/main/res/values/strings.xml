@@ -45,5 +45,6 @@
     <string name="Resultat">Nom du résultat</string>
     <string name="ImgRes">Image du résultat</string>
     <string name="Back4">Retour</string>
+    <string name="UserRes">Username</string>
 
 </resources>

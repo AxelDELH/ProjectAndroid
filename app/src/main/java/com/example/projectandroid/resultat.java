@@ -12,25 +12,30 @@ import android.widget.TextView;
 public class resultat extends AppCompatActivity {
     private static final String Log_TAG = "Intent Log";
     private TextView NomRes;
+    private TextView UserRes;
     private ImageView ImgRes;
     private Button Retour;
     private String Res1;
     private String Res2;
     private String Res3;
     private int test;
+    private String Username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultat);
+        Username = getIntent().getStringExtra("Username");
         Res1 = getIntent().getStringExtra("Res1");
         Res2 = getIntent().getStringExtra("Res2");
         Res3 = getIntent().getStringExtra("Res3");
         test = getIntent().getIntExtra("test",0);
         this.NomRes = findViewById(R.id.textView5);
+        this.UserRes = findViewById(R.id.textView6);
         this.ImgRes = findViewById(R.id.imageView8);
         this.Retour = findViewById(R.id.buttonBack4);
 
+        UserRes.setText(Username+", la région qui vous corresond est :");
 
         if (test==1){
             Log.d(Log_TAG, "Lancement du if test");
