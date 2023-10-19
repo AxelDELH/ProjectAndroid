@@ -3,6 +3,7 @@ package com.example.projectandroid;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,13 +28,34 @@ public class QuestionSeekbar extends AppCompatActivity {
         this.Next = findViewById(R.id.button_next_seekbar);
         this.Back = findViewById(R.id.button_back_seekbar);
         this.SeekBar = findViewById(R.id.seek_bar);
+
         this.SeekBar2 = findViewById(R.id.seek_bar2);
 
+        //Initialisation des SharedPreferences : le code pour récupérer et stocker la valeur, vous devez initialiser SharedPreferences dans votre activité
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+
+        //Récupération de la valeur précédente : Pour récupérer
+        // la valeur stockée précédemment, ajoutez le code suivant sous l'initialisation de la SeekBar
+
+        int defaultValue = 5; // Valeur par défaut de 5 si aucune valeur n'est stockée.
+        int savedValue = sharedPreferences.getInt("userValue", defaultValue);
+        SeekBar.setProgress(savedValue);
+
+        //Code SeekBar n°1
         SeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 // Mettez à jour le texte pour afficher la valeur sélectionnée.
                 SeekBarValue1.setText("Sur une échelle de 1 à 10, de quelle taille te considères-tu : " + progress);
+
+                // Mettre à jour SharedPreferences avec la nouvelle valeur.
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putInt("userValue", progress);
+                editor.apply();
+
+                //Avec ces modifications, votre application récupérera la valeur choisie par
+                //l'utilisateur à partir des SharedPreferences et la mettra à jour à chaque fois que l'utilisateur
+                //déplacera la SeekBar. Cette valeur sera conservée même après la fermeture et la réouverture de l'application.
             }
 
             @Override
