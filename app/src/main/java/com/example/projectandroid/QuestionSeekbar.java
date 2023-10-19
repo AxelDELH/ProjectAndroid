@@ -28,6 +28,25 @@ public class QuestionSeekbar extends AppCompatActivity {
         this.Back = findViewById(R.id.button_back_seekbar);
         this.SeekBar = findViewById(R.id.seek_bar);
         this.SeekBar2 = findViewById(R.id.seek_bar2);
+
+        SeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                // Mettez à jour le texte pour afficher la valeur sélectionnée.
+                SeekBarValue1.setText("Sur une échelle de 1 à 10, de quelle taille te considères-tu : " + progress);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                // Appelé lorsque l'utilisateur commence à déplacer la SeekBar.
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                // Appelé lorsque l'utilisateur arrête de déplacer la SeekBar.
+            }
+        });
+
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
