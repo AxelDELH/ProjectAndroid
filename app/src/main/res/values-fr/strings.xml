@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Start">Commencer</string>
+    <string name="Select_test">Choisit un test</string>
+    <string name="Résultat">Résultat</string>
+    <string name="Leave">Quitter</string>
+    <string name="QuestionReg1">Été ou Hiver?</string>
+    <string name="But_ete">Été</string>
+    <string name="But_hiver">Hiver</string>
+    <string name="Img_ete">Désert</string>
+    <string name="Img_hiver">Banquise</string>
+    <string name="Back">Retour</string>
+    <string name="QuestionReg2">Mer ou Montagne?</string>
+    <string name="Img_Mer">mer</string>
+    <string name="Img_Montagne">mont</string>
+    <string name="But_Next">Suivant</string>
+    <string name="Back2">Retour</string>
+    <string name="QuestionReg3">Vivre dans une  ville, à la campagne ou dans la nature ?</string>
+    <string name="But_Ville">Ville</string>
+    <string name="But_Campagne">Campagne</string>
+    <string name="But_Nature">Nature</string>
+    <string name="But_Fin">Résultat</string>
+    <string name="Img_ville">vil</string>
+    <string name="Img_campagne">camp</string>
+    <string name="Img_nature">natu</string>
+    <string name="Back3">Retour</string>
+    <string name="QuestionSeekbar1">Sur une échelle de 1 à 10. De quelle taille te considères-tu ?</string>
+    <string name="QuestionSeekbar2">Sur une échelle de 1 à 10. A quel point croyez-vous au surnaturel</string>
+    <string name="ButtonNextSeekbar">Suivant</string>
+    <string name="ButtonBackSeekbar">Retour</string>
+    <string name="Resultat">Nom du résultat</string>
+    <string name="ImgRes">Image du résultat</string>
+    <string name="Back4">Retour</string>
+    <string name="UserRes">Utilisateur</string>
+</resources>

@@ -1,50 +1,49 @@
 <resources>
-    <string name="app_name">Runeterra universe</string>
-    <string name="Start">Commencer</string>
-    <string name="Name">Pseudo</string>
-    <string name="Select_test">Choisit un test</string>
-    <string name="Résultat">Résultat des anciens test</string>
-    <string name="Leave">Quitter</string>
+    <string name="app_name" translatable="false">Runeterra universe</string>
+    <string name="Start">Start</string>
+    <string name="Name" translatable="false">Pseudo</string>
+    <string name="Select_test">Choose a test</string>
     <string-array name="array_spinner">
         <item>Région</item>
         <item>Race</item>
     </string-array>
 
-    <string name="QuestionReg1">Été ou Hiver?</string>
-    <string name="But_ete">Été</string>
-    <string name="But_hiver">Hiver</string>
-    <string name="Img_ete">désert</string>
-    <string name="Img_hiver">banquise</string>
-    <string name="Back">Retour</string>
+    <string name="switchMerMont" translatable="false">.</string>
 
-    <string name="QuestionReg2">Mer ou Montagne?</string>
-    <string name="switchMerMont">.</string>
-    <string name="Img_Mer">mer</string>
-    <string name="Img_Montagne">mont</string>
-    <string name="But_Next">Suivant</string>
-    <string name="Back2">Retour</string>
-
-    <string name="QuestionReg3">Vivre dans une grande ville, à la campagne ou dans la nature ?</string>
-    <string name="But_Ville">Ville</string>
-    <string name="But_Campagne">Campagne</string>
-    <string name="But_Nature">Nature</string>
-    <string name="But_Fin">Résultat</string>
-    <string name="Img_ville">vil</string>
-    <string name="Img_campagne">camp</string>
-    <string name="Img_nature">natu</string>
-    <string name="Back3">Retour</string>
+    <string name="But_Ville">City</string>
 
     <!-- QuestionSeekbar -->
-    <string name="QuestionSeekbar1">Sur une échelle de 1 à 10. De quelle taille te considères-tu ?</string>
-    <string name="seek_bar_value1">5</string>
-    <string name="QuestionSeekbar2">Sur une échelle de 1 à 10. A quel point croyez-vous au surnaturel</string>
-    <string name="seek_bar_value2">5</string>
-    <string name="ButtonNextSeekbar">Suivant</string>
-    <string name="ButtonBackSeekbar">Retour</string>
+    <string name="seek_bar_value1" translatable="false">5</string>
+    <string name="seek_bar_value2" translatable="false">5</string>
 
-    <string name="Resultat">Nom du résultat</string>
-    <string name="ImgRes">Image du résultat</string>
-    <string name="Back4">Retour</string>
+    <string name="Résultat">Result</string>
+    <string name="Leave">Leave</string>
+    <string name="QuestionReg1">Summer or Winter</string>
+    <string name="But_ete">Summer</string>
+    <string name="But_hiver">Winter</string>
+    <string name="Img_ete">Desert</string>
+    <string name="Img_hiver">Ice</string>
+    <string name="Back">Back</string>
+    <string name="QuestionReg2">See or Mountains</string>
+    <string name="Img_Mer">See</string>
+    <string name="Img_Montagne">mountains</string>
+    <string name="But_Next">Next</string>
+    <string name="Back2">Back</string>
+    <string name="QuestionReg3">Live in a city, in countryside or nature ?</string>
+    <string name="But_Campagne">Countryside</string>
+    <string name="But_Nature">Nature</string>
+    <string name="But_Fin">Result</string>
+    <string name="Img_ville">city</string>
+    <string name="Img_campagne">coutnry</string>
+    <string name="Img_nature">natu</string>
+    <string name="Back3">Back</string>
+    <string name="QuestionSeekbar1">On a ladder from 1 to 10. What is youre height ?</string>
+    <string name="QuestionSeekbar2">On a ladder from 1 to 10. Do you believe in surnatural ?</string>
+    <string name="ButtonNextSeekbar">Next</string>
+    <string name="ButtonBackSeekbar">Back</string>
+    <string name="Resultat">Name of result</string>
+    <string name="ImgRes">Image of result</string>
+    <string name="Back4">Back</string>
     <string name="UserRes">Username</string>
 
 </resources>
