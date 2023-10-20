@@ -68,7 +68,7 @@
         android:contentDescription="@string/Img_nature"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
-        tools:ignore="ImageContrastCheck"
+        tools:ignore="ImageContrastCheck,VisualLintBounds"
         tools:srcCompat="@drawable/nature" />
 
     <ImageView
