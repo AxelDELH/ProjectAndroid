@@ -10,8 +10,8 @@
 
     <TextView
         android:id="@+id/seek_bar_value2"
-        android:layout_width="54dp"
-        android:layout_height="55dp"
+        android:layout_width="99dp"
+        android:layout_height="91dp"
         android:layout_below="@id/seek_bar"
         android:layout_centerHorizontal="true"
         android:text="@string/seek_bar_value1"
@@ -107,8 +107,8 @@
 
     <TextView
         android:id="@+id/seek_bar_value"
-        android:layout_width="54dp"
-        android:layout_height="55dp"
+        android:layout_width="102dp"
+        android:layout_height="81dp"
         android:layout_below="@id/seek_bar"
         android:layout_centerHorizontal="true"
         android:text="@string/seek_bar_value1"
