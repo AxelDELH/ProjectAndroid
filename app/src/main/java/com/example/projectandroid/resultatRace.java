@@ -117,15 +117,15 @@ public class resultatRace extends AppCompatActivity {
                 // Yéti
                 NomRes.setText("Yéti");
                 ImgRes.setImageResource(R.drawable.yeti);
-        } else if (scoreActuel>= 30 && scoreActuel < 35) {
+        } else if (scoreActuel> 30 && scoreActuel < 35) {
                 // Minautore
                 NomRes.setText("Minautore");
                 ImgRes.setImageResource(R.drawable.minotaure);
-        } else if (scoreActuel> 35 && scoreActuel <= 40) {
+        } else if (scoreActuel>= 35 && scoreActuel <= 40) {
                 // Golem
                 NomRes.setText("Golem");
                 ImgRes.setImageResource(R.drawable.golem);
-        } else if (scoreActuel == 35) {
+        } else if (scoreActuel == 30) {
                 // Yordle
                 NomRes.setText("Yordle");
                 ImgRes.setImageResource(R.drawable.yordle);
@@ -134,7 +134,7 @@ public class resultatRace extends AppCompatActivity {
                 NomRes.setText("Vastayia");
                 ImgRes.setImageResource(R.drawable.vastayia);
         } else {
-
+                NomRes.setText("Vous mêmes ! réssayez");
         }
 
         UserRes.setText("la race qui vous corresond est :" +NomRes);
