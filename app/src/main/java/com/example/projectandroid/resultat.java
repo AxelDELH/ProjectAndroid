@@ -1,19 +1,19 @@
 package com.example.projectandroid;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class resultat extends AppCompatActivity {
     private static final String Log_TAG = "Intent Log";
     private TextView NomRes;
     private TextView UserRes;
-    private ImageView ImgRes;
+    //private ImageView ImgRes;
     private Button Retour;
     private String Res1;
     private String Res2;
@@ -21,6 +21,7 @@ public class resultat extends AppCompatActivity {
     private int test;
     private String Username;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +33,7 @@ public class resultat extends AppCompatActivity {
         test = getIntent().getIntExtra("test",0);
         this.NomRes = findViewById(R.id.textView5);
         this.UserRes = findViewById(R.id.textView6);
-        this.ImgRes = findViewById(R.id.imageView8);
+        //this.ImgRes = findViewById(R.id.imageView8);
         this.Retour = findViewById(R.id.buttonBack4);
 
         UserRes.setText(Username+", la région qui vous corresond est :");
@@ -43,58 +44,74 @@ public class resultat extends AppCompatActivity {
                 Log.d(Log_TAG, "Lancement du if Ete");
                 if (Res2.equals("Mer")){
                     Log.d(Log_TAG, "Lancement du if Mer");
-                    if (Res3.equals("Ville")){
-                        Log.d(Log_TAG, "Lancement du if Ville");
-                        NomRes.setText("Piltover and Zaun");
-                        //ImgRes.setImageDrawable(image P/Z);
-                    }else if (Res3.equals("Campagne")){
-                        NomRes.setText("Icathia");
-                        //ImgRes.setImageDrawable(image Icathia);
-                    }else if (Res3.equals("Nature")){
-                        NomRes.setText("Ixtal");
-                        //ImgRes.setImageDrawable(image Ixtal);
+                    switch (Res3) {
+                        case "Ville":
+                            Log.d(Log_TAG, "Lancement du if Ville");
+                            NomRes.setText("Piltover and Zaun");
+                            //ImgRes.setImageResource(R.drawable.piltoverzaun);
+                            break;
+                        case "Campagne":
+                            NomRes.setText("Icathia");
+                            //ImgRes.setImageResource(R.drawable.icathia);
+                            break;
+                        case "Nature":
+                            NomRes.setText("Ixtal");
+                            //ImgRes.setImageResource(R.drawable.ixtal);
+                            break;
                     }
                 }else if (Res2.equals("Montagne")){
                     Log.d(Log_TAG, "Lancement du if Montagne");
-                    if (Res3.equals("Ville")){
-                        NomRes.setText("Noxus");
-                        //ImgRes.setImageDrawable(image Noxus);
-                    }else if (Res3.equals("Campagne")){
-                        NomRes.setText("Camavore");
-                        //ImgRes.setImageDrawable(image Camrvore);
-                    }else if (Res3.equals("Nature")){
-                        NomRes.setText("Shurima");
-                        //ImgRes.setImageDrawable(image Shurima);
+                    switch (Res3) {
+                        case "Ville":
+                            NomRes.setText("Noxus");
+                            //ImgRes.setImageResource(R.drawable.noxus);
+                            break;
+                        case "Campagne":
+                            NomRes.setText("Camavore");
+                            //ImgRes.setImageResource(R.drawable.camavore);
+                            break;
+                        case "Nature":
+                            NomRes.setText("Shurima");
+                            //ImgRes.setImageResource(R.drawable.shurima);
+                            break;
                     }
                 }
             }else if (Res1.equals("Hiver")) {
                 Log.d(Log_TAG, "Lancement du if Hiver");
                 if (Res2.equals("Mer")) {
-                    if (Res3.equals("Ville")) {
-                        NomRes.setText("Bildgewater");
-                        //ImgRes.setImageDrawable(image P/Z);
-                    } else if (Res3.equals("Campagne")) {
-                        NomRes.setText("Iles obscur");
-                        //ImgRes.setImageDrawable(image iles obscur);
-                    } else if (Res3.equals("Nature")) {
-                        NomRes.setText("Ionia");
-                        //ImgRes.setImageDrawable(image Ionia);
+                    switch (Res3) {
+                        case "Ville":
+                            NomRes.setText("Bildgewater");
+                            //ImgRes.setImageResource(R.drawable.bilgewater);
+                            break;
+                        case "Campagne":
+                            NomRes.setText("Iles obscur");
+                            //ImgRes.setImageResource(R.drawable.ilesobscur);
+                            break;
+                        case "Nature":
+                            NomRes.setText("Ionia");
+                            //ImgRes.setImageResource(R.drawable.ionia);
+                            break;
                     }
                 } else if (Res2.equals("Montagne")) {
-                    if (Res3.equals("Ville")) {
-                        NomRes.setText("Demacia");
-                        //ImgRes.setImageDrawable(image Demacia);
-                    } else if (Res3.equals("Campagne")) {
-                        NomRes.setText("Targon");
-                        //ImgRes.setImageDrawable(image Targon);
-                    } else if (Res3.equals("Nature")) {
-                        NomRes.setText("Frejlord");
-                        //ImgRes.setImageDrawable(image Frejlord);
+                    switch (Res3) {
+                        case "Ville":
+                            NomRes.setText("Demacia");
+                            //ImgRes.setImageResource(R.drawable.demacia);
+                            break;
+                        case "Campagne":
+                            NomRes.setText("Targon");
+                            //ImgRes.setImageResource(R.drawable.targon);
+                            break;
+                        case "Nature":
+                            NomRes.setText("Frejlord");
+                            //ImgRes.setImageResource(R.drawable.frejlord);
+                            break;
                     }
                 }
             }
         }else if (test==2){
-
+            // résultat test 2
         }
 
 

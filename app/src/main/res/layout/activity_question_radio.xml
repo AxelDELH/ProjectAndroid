@@ -57,7 +57,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/campagne" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -68,8 +68,8 @@
         android:contentDescription="@string/Img_nature"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
-        tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:ignore="ImageContrastCheck,VisualLintBounds"
+        tools:srcCompat="@drawable/nature" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -83,7 +83,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.376"
         tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/ville" />
 
     <Button
         android:id="@+id/buttonAffRes"
