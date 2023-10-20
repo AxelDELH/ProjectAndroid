@@ -41,7 +41,7 @@
         android:contentDescription="@string/Img_hiver"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/Banquise" />
+        tools:srcCompat="@drawable/banquise" />
 
     <Button
         android:id="@+id/buttonEte"

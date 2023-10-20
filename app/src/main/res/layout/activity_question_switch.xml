@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@drawable/Plage" />
+        tools:srcCompat="@drawable/plage" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -41,7 +41,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/Montagne" />
+        tools:srcCompat="@drawable/montagne" />
 
     <Switch
         android:id="@+id/switchMM"

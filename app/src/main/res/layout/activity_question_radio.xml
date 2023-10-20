@@ -57,7 +57,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@drawable/Campagne" />
+        tools:srcCompat="@drawable/campagne" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -69,7 +69,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@drawable/Nature" />
+        tools:srcCompat="@drawable/nature" />
 
     <ImageView
         android:id="@+id/imageView7"
