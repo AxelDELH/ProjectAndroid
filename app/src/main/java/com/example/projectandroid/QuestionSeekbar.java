@@ -112,8 +112,8 @@ public class QuestionSeekbar extends AppCompatActivity {
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Créez une intention ver la question suivante
-                Intent intent = new Intent(QuestionSeekbar.this, QuestionRadio.class);
+                // Créez une intention vers la question suivante
+                Intent intent = new Intent(QuestionSeekbar.this, QuestionScrollView.class);
                 Log.d(Log_TAG, "creation d'intent QRadio");
                 //transfer de la réponse à insérer ici ???
                 startActivity(intent);

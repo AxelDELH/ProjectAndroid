@@ -32,4 +32,29 @@
     <string name="ImgRes">Image du résultat</string>
     <string name="Back4">Retour</string>
     <string name="UserRes">Utilisateur</string>
+    <string name="textScroll">Séries de questions</string>
+
+
+
+    <!-- Scrollview -->
+    <string-array name="answer_options1">
+        <item>Oui</item>
+        <item>Non</item>
+    </string-array>
+
+    <string-array name="answer_options2">
+        <item>J aime vivre en communauté</item>
+        <item>Je préfère être seul</item>
+        <item>Je préfère vivre en petit groupe</item>
+    </string-array>
+
+    <string-array name="answer_options3">
+        <item>J ai un lien avec la nature et les animaux</item>
+        <item>Je ne suis pas proche de la nature</item>
+        <item>Je peux manipuler la nature pour mes besoins</item>
+    </string-array>
+
+    <string name="QuestionScrollview1">Avez-vous des caractéristiques physiques inhabituelles</string>
+    <string name="QuestionScrollview2">Préférez-vous vivre en communauté ou en solitaire ?</string>
+    <string name="QuestionScrollview3">Quelle est votre relation avec la nature ?</string>
 </resources>
