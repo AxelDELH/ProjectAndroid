@@ -52,6 +52,8 @@ public class QuestionButton extends AppCompatActivity {
                 Intent intent = new Intent(QuestionButton.this, QuestionSwitch.class);
                 Log.d(Log_TAG, "creation d'intent QSwitch");
                 intent.putExtra("Res1","Hiver");
+                intent.putExtra("Username",Username);
+                Log.d(Log_TAG, "transfert :"+Username);
                 startActivity(intent);
                 Log.d(Log_TAG, "Lancement du test");
             }

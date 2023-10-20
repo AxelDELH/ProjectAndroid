@@ -31,8 +31,8 @@ public class QuestionSwitch extends AppCompatActivity {
         this.Mont = findViewById(R.id.switchMM);
         this.ImgMon = findViewById(R.id.imageView4);
         this.ImgMer = findViewById(R.id.imageView3);
-        ImgMon.setImageResource(R.drawable.campagne);
-        ImgMer.setImageResource(R.drawable.nature);
+        ImgMon.setImageResource(R.drawable.montagne);
+        ImgMer.setImageResource(R.drawable.plage);
 
 
         Suivant.setOnClickListener(new View.OnClickListener() {
