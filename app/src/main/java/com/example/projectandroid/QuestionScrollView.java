@@ -2,20 +2,30 @@ package com.example.projectandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 public class QuestionScrollView extends AppCompatActivity {
 
+    private Button Next; //Button Suivant
+    private Button Back; //Button Retour
     private static final String Log_TAG = "Intent Log";
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_scroll_view);
+
+        this.Next = findViewById(R.id.button_next_scrollview);
+        this.Back = findViewById(R.id.button_back_scrollview);
+
         //les spinners de l'activité
         Spinner answerSpinner1 = findViewById(R.id.answerSpinner1);
         Spinner answerSpinner2 = findViewById(R.id.answerSpinner2);
@@ -73,6 +83,27 @@ public class QuestionScrollView extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> parentView) {
                 // Aucune réponse sélectionnée
+            }
+        });
+
+        //Code Boutons Suivant et Retour
+        Next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Créez une intention vers la question suivante
+                Intent intent = new Intent(QuestionScrollView.this, resultatRace.class);
+                Log.d(Log_TAG, "creation d'intent QRadio");
+                //transfer de la réponse à insérer ici ???
+                startActivity(intent);
+                Log.d(Log_TAG, "Lancement du test");
+            }
+        });
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(Log_TAG, "bouton close");
+                // Appeler finish() pour dépiler l'activité actuelle et revenir à l'activité précédente
+                finish();
             }
         });
 

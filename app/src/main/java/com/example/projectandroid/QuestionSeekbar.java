@@ -104,10 +104,6 @@ public class QuestionSeekbar extends AppCompatActivity {
             }
         });
 
-
-
-
-
         //Code Boutons Suivant et Retour
         Next.setOnClickListener(new View.OnClickListener() {
             @Override

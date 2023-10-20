@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class resultat extends AppCompatActivity {
+public class resultatRace extends AppCompatActivity {
     private static final String Log_TAG = "Intent Log";
     private TextView NomRes;
     private TextView UserRes;

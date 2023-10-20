@@ -4,25 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color_race"
     tools:context=".QuestionButton">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="143dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="160dp"
+        android:layout_width="207dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="136dp"
+        android:background="#77DAE4"
+        android:fontFamily="serif"
         android:text="@string/QuestionReg1"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="203dp"
-        android:layout_height="426dp"
-        android:layout_marginTop="208dp"
+        android:layout_width="192dp"
+        android:layout_height="417dp"
+        android:layout_marginTop="224dp"
         android:layout_marginEnd="20dp"
         android:contentDescription="@string/Img_ete"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
@@ -71,6 +76,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="52dp"
         android:text="@string/Back"
+        app:icon="@android:drawable/ic_menu_revert"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

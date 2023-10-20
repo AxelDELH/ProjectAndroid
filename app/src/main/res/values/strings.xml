@@ -20,18 +20,18 @@
 
     <string name="Résultat">Result</string>
     <string name="Leave">Leave</string>
-    <string name="QuestionReg1">Summer or Winter</string>
+    <string name="QuestionReg1">Summer or Winter ?</string>
     <string name="But_ete">Summer</string>
     <string name="But_hiver">Winter</string>
     <string name="Img_ete">Desert</string>
     <string name="Img_hiver">Ice</string>
     <string name="Back">Back</string>
-    <string name="QuestionReg2">See or Mountains</string>
+    <string name="QuestionReg2">See or Mountains ?</string>
     <string name="Img_Mer">See</string>
     <string name="Img_Montagne">mountains</string>
     <string name="But_Next">Next</string>
     <string name="Back2">Back</string>
-    <string name="QuestionReg3">Live in a city, in countryside or nature ?</string>
+    <string name="QuestionReg3">Do you prefer to Live in a city, in countryside or nature ?</string>
     <string name="But_Campagne">Countryside</string>
     <string name="But_Nature">Nature</string>
     <string name="But_Fin">Result</string>
@@ -47,6 +47,8 @@
     <string name="ImgRes">Image of result</string>
     <string name="Back4">Back</string>
     <string name="UserRes">Username</string>
+    <string name="TextQuizzChoice">Choose a quiz below</string>
+    <string name="ResultDescription">Description result</string>
 
 
     <!-- Scrollview -->
@@ -70,5 +72,8 @@
     <string name="QuestionScrollview1">Do you have any unusual physical characteristics</string>
     <string name="QuestionScrollview2">Do you prefer to live in a community or alone?</string>
     <string name="QuestionScrollview3">What is your relationship with nature?</string>
+
+    <string name="ButtonNextScrollview">Next</string>
+    <string name="ButtonBackScrollview">Back</string>
 
 </resources>

@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color_race"
-    tools:context=".resultat">
+    tools:context=".resultatRace">
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imageViewRace"
         android:layout_width="187dp"
         android:layout_height="264dp"
         android:layout_marginTop="232dp"
@@ -21,7 +20,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewRaceResult"
         android:layout_width="199dp"
         android:layout_height="61dp"
         android:layout_marginTop="160dp"
@@ -35,7 +34,7 @@
         tools:ignore="TextSizeCheck" />
 
     <Button
-        android:id="@+id/buttonBack4"
+        android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
@@ -46,7 +45,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textViewRace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="124dp"
@@ -57,7 +56,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textResultDescription"
+        android:id="@+id/textResultDescriptionRace"
         android:layout_width="363dp"
         android:layout_height="202dp"
         android:layout_marginTop="16dp"
@@ -66,5 +65,5 @@
         android:textAlignment="center"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRace" />
 </androidx.constraintlayout.widget.ConstraintLayout>

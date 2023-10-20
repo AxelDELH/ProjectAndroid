@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:scrollbarThumbHorizontal="@drawable/plage"
     android:scrollbarThumbVertical="@drawable/plage"
+    android:background="@color/background_color_race"
     tools:context=".QuestionSwitch">
 
     <TextView
@@ -13,7 +14,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
+        android:fontFamily="serif"
         android:text="@string/QuestionReg2"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,10 +26,10 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="202dp"
-        android:layout_height="334dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="208dp"
+        android:layout_width="161dp"
+        android:layout_height="328dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="216dp"
         android:contentDescription="@string/Img_Mer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -33,12 +38,12 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="205dp"
-        android:layout_height="334dp"
-        android:layout_marginTop="208dp"
+        android:layout_width="181dp"
+        android:layout_height="319dp"
+        android:layout_marginTop="224dp"
         android:contentDescription="@string/Img_Montagne"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/montagne" />
@@ -47,7 +52,7 @@
         android:id="@+id/switchMM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="128dp"
         android:minHeight="48dp"
         android:text="@string/switchMerMont"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -73,6 +78,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="52dp"
         android:text="@string/Back2"
+        app:icon="@android:drawable/ic_menu_revert"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

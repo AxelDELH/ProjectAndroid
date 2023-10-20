@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Start">Commencer</string>
+    <string name="Start">Commencer le quizz</string>
     <string name="Select_test">Choisit un test</string>
     <string name="Résultat">Résultat</string>
     <string name="Leave">Quitter</string>
-    <string name="QuestionReg1">Été ou Hiver?</string>
+    <string name="QuestionReg1">Été ou Hiver ?</string>
     <string name="But_ete">Été</string>
     <string name="But_hiver">Hiver</string>
     <string name="Img_ete">Désert</string>
     <string name="Img_hiver">Banquise</string>
     <string name="Back">Retour</string>
-    <string name="QuestionReg2">Mer ou Montagne?</string>
+    <string name="QuestionReg2">Mer ou Montagne ?</string>
     <string name="Img_Mer">mer</string>
     <string name="Img_Montagne">mont</string>
     <string name="But_Next">Suivant</string>
     <string name="Back2">Retour</string>
-    <string name="QuestionReg3">Vivre dans une  ville, à la campagne ou dans la nature ?</string>
+    <string name="QuestionReg3">Vous préférez vivre dans une  ville, à la campagne ou dans la nature ?</string>
     <string name="But_Ville">Ville</string>
     <string name="But_Campagne">Campagne</string>
     <string name="But_Nature">Nature</string>
@@ -30,9 +30,11 @@
     <string name="ButtonBackSeekbar">Retour</string>
     <string name="Resultat">Nom du résultat</string>
     <string name="ImgRes">Image du résultat</string>
+    <string name="ResultDescription">Description du résultat du résultat</string>
     <string name="Back4">Retour</string>
     <string name="UserRes">Utilisateur</string>
     <string name="textScroll">Séries de questions</string>
+    <string name="TextQuizzChoice">Choisisez un quizz ci-dessous</string>
 
 
 
@@ -57,4 +59,7 @@
     <string name="QuestionScrollview1">Avez-vous des caractéristiques physiques inhabituelles</string>
     <string name="QuestionScrollview2">Préférez-vous vivre en communauté ou en solitaire ?</string>
     <string name="QuestionScrollview3">Quelle est votre relation avec la nature ?</string>
+
+    <string name="ButtonNextScrollview">Suivant</string>
+    <string name="ButtonBackScrollview">Retour</string>
 </resources>
