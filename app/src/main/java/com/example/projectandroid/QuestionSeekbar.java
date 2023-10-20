@@ -41,7 +41,7 @@ public class QuestionSeekbar extends AppCompatActivity {
 
         //Code SeekBar n°1/Code SeekBar n°1/Code SeekBar n°1/Code SeekBar n°1/Code SeekBar n°1/Code SeekBar n°1/
         int defaultValue1 = 5; // Valeur par défaut de 5 si aucune valeur n'est stockée.
-        int savedValue1 = sharedPreferences.getInt("userValue", defaultValue1);
+        int savedValue1 = sharedPreferences.getInt("SeekbarValue1", defaultValue1);
         SeekBar1.setProgress(savedValue1);
 
         SeekBar1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -73,7 +73,7 @@ public class QuestionSeekbar extends AppCompatActivity {
 
         //Code SeekBar n°2/Code SeekBar n°2/Code SeekBar n°2/Code SeekBar n°2/Code SeekBar n°2/Code SeekBar n°2/
         int defaultValue2 = 5; // Valeur par défaut de 5 si aucune valeur n'est stockée.
-        int savedValue2 = sharedPreferences.getInt("userValue", defaultValue2);
+        int savedValue2 = sharedPreferences.getInt("SeekbarValue2", defaultValue2);
         SeekBar1.setProgress(savedValue2);
 
 

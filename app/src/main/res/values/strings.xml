@@ -58,7 +58,7 @@
     </string-array>
 
     <string-array name="answer_options2">
-        <item>I like living in community..</item>
+        <item>I like living in community</item>
         <item>I prefer to be alone</item>
         <item>I prefer to live in a small group</item>
     </string-array>
@@ -66,7 +66,7 @@
     <string-array name="answer_options3">
         <item>I have a connection with nature and animals</item>
         <item>Im not close to nature</item>
-        <item>I can manipulate nature for my needs.</item>
+        <item>I can manipulate nature for my needs</item>
     </string-array>
 
     <string name="QuestionScrollview1">Do you have any unusual physical characteristics</string>
@@ -75,5 +75,11 @@
 
     <string name="ButtonNextScrollview">Next</string>
     <string name="ButtonBackScrollview">Back</string>
+
+    <!-- ResultRace -->
+    <string name="textViewRace">Username Result</string>
+    <string name="textViewRaceResult">Name of the Result</string>
+    <string name="imageViewRace">Username Race Result</string>
+    <string name="textResultDescriptionRace">Username Race Result Description</string>
 
 </resources>

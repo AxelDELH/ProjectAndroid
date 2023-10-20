@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -32,16 +33,17 @@ public class QuestionScrollView extends AppCompatActivity {
         Spinner answerSpinner3 = findViewById(R.id.answerSpinner3);
 
         //Avec ce code, le Spinner sera rempli avec les options définies dans le tableau de ressources.
-        //spinner1
-        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.answer_options1, android.R.layout.simple_spinner_item);
-        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        answerSpinner1.setAdapter(adapter1);
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
 
+        //spinner1
         answerSpinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                String selectedAnswerScroll1 = answerSpinner1.getSelectedItem().toString();
-                Log.d(Log_TAG, "Valeur enregistrer spinner1 " + selectedAnswerScroll1); //log
+                String selectedAnswer1 = answerSpinner1.getSelectedItem().toString();
+                editor.putString("spinnerValue1", selectedAnswer1);
+                editor.apply();
+                Log.d(Log_TAG, "Valeur enregistrer spinner1 " + selectedAnswer1); //log
             }
 
             @Override
@@ -51,15 +53,13 @@ public class QuestionScrollView extends AppCompatActivity {
         });
 
         //spinner2
-        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.answer_options2, android.R.layout.simple_spinner_item);
-        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        answerSpinner2.setAdapter(adapter2);
-
         answerSpinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                String selectedAnswerScroll2  = answerSpinner2.getSelectedItem().toString();
-                Log.d(Log_TAG, "Valeur enregistrer spinner2 " + selectedAnswerScroll2); //log
+                String selectedAnswer2  = answerSpinner2.getSelectedItem().toString();
+                editor.putString("spinnerValue2", selectedAnswer2);
+                editor.apply();
+                Log.d(Log_TAG, "Valeur enregistrer spinner2 " + selectedAnswer2); //log
             }
 
             @Override
@@ -69,15 +69,13 @@ public class QuestionScrollView extends AppCompatActivity {
         });
 
         //spinner3
-        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this, R.array.answer_options3, android.R.layout.simple_spinner_item);
-        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        answerSpinner3.setAdapter(adapter3);
-
         answerSpinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                String selectedAnswerScroll3 = answerSpinner3.getSelectedItem().toString();
-                Log.d(Log_TAG, "Valeur enregistrer spinner3 " + selectedAnswerScroll3); //log
+                String selectedAnswer3 = answerSpinner3.getSelectedItem().toString();
+                editor.putString("spinnerValue3", selectedAnswer3);
+                editor.apply();
+                Log.d(Log_TAG, "Valeur enregistrer spinner3 " + selectedAnswer3); //log
             }
 
             @Override

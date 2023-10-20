@@ -62,4 +62,10 @@
 
     <string name="ButtonNextScrollview">Suivant</string>
     <string name="ButtonBackScrollview">Retour</string>
+
+    <!-- ResultRace -->
+    <string name="textViewRace">Username Result</string>
+    <string name="textViewRaceResult">Name of the Result</string>
+    <string name="imageViewRace">Username Race Result</string>
+    <string name="textResultDescriptionRace">Username Race Result Description</string>
 </resources>

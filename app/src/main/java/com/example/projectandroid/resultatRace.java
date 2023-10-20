@@ -1,6 +1,7 @@
 package com.example.projectandroid;
 
 import android.annotation.SuppressLint;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,118 +18,126 @@ public class resultatRace extends AppCompatActivity {
     private TextView ResultDescription;
     private ImageView ImgRes;
     private Button Retour;
-    private String Res1;
-    private String Res2;
-    private String Res3;
-    private int test;
     private String Username;
 
-    @SuppressLint("SetTextI18n")
+    public int score = 0;
+
+    //Score de l'utilisateurs qui va décider de sont résultat
+    public void incrementerScore(int points) {
+        score += points;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+
+    @SuppressLint({"SetTextI18n", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resultat);
+        setContentView(R.layout.activity_resultat_race);
         Username = getIntent().getStringExtra("Username");
-        Res1 = getIntent().getStringExtra("Res1");
-        Res2 = getIntent().getStringExtra("Res2");
-        Res3 = getIntent().getStringExtra("Res3");
-        test = getIntent().getIntExtra("test",0);
-        this.NomRes = findViewById(R.id.textView5);
-        this.UserRes = findViewById(R.id.textView6);
-        this.ImgRes = findViewById(R.id.imageView8);
-        this.Retour = findViewById(R.id.buttonBack4);
-        this.ResultDescription = findViewById(R.id.textResultDescription);
+        this.NomRes = findViewById(R.id.textViewRace);
+        this.UserRes = findViewById(R.id.textViewRaceResult);
+        this.ImgRes = findViewById(R.id.imageViewRace);
+        this.Retour = findViewById(R.id.buttonBack);
+        this.ResultDescription = findViewById(R.id.textResultDescriptionRace);
 
-        UserRes.setText(Username+", la région qui vous corresond est :");
+        // Récupérez la valeur des SeekBar à partir des SharedPreferences.
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        int savedValueSeekbar1 = sharedPreferences.getInt("SeekbarValue1", 5); // 5 est la valeur par défaut si aucune valeur n'est trouvée
+        int savedValueSeekbar2 = sharedPreferences.getInt("SeekbarValue2", 5); // 5 est la valeur par défaut si aucune valeur n'est trouvée
 
-        if (test==1){
-            Log.d(Log_TAG, "Lancement du if test");
-            if (Res1.equals("Été")){
-                Log.d(Log_TAG, "Lancement du if Ete");
-                if (Res2.equals("Mer")){
-                    Log.d(Log_TAG, "Lancement du if Mer");
-                    switch (Res3) {
-                        case "Ville":
-                            Log.d(Log_TAG, "Lancement du if Ville");
-                            NomRes.setText("Piltover and Zaun");
-                            ImgRes.setImageResource(R.drawable.piltoverzaun);
-                            ResultDescription.setText("Piltover est une cité florissante animée par le progrès, dont la puissance et l'influence ne cessent de croître. C'est le centre culturel de Valoran, où l'art, l'artisanat, le commerce et l'innovation avancent main dans la main. Sa puissance ne repose pas sur sa force militaire, mais sur les rouages bien huilés du libre-échange et de la pensée progressiste.");
-                            break;
-                        case "Campagne":
-                            NomRes.setText("Icathia");
-                            //ImgRes.setImageResource(R.drawable.icathia);
-                            break;
-                        case "Nature":
-                            NomRes.setText("Ixtal");
-                            ImgRes.setImageResource(R.drawable.ixtal);
-                            ResultDescription.setText("Célèbre pour sa maîtrise de la magie élémentaire, Ixtal fut l'une des premières nations indépendantes à se joindre à l'empire de Shurima. En vérité, la culture d'Ixtal est bien plus ancienne que ça. Elle appartient à la grande diaspora de l'ouest qui a donné naissance à de nombreuses civilisations, parmi lesquelles Buhru, la magnifique Helia et Targon l'ascétique. Elle a probablement joué un rôle significatif dans la création des premiers Transfigurés.");
-                            break;
-                    }
-                }else if (Res2.equals("Montagne")){
-                    Log.d(Log_TAG, "Lancement du if Montagne");
-                    switch (Res3) {
-                        case "Ville":
-                            NomRes.setText("Noxus");
-                            ImgRes.setImageResource(R.drawable.noxus);
-                            ResultDescription.setText("Noxus est un puissant empire à la réputation terrifiante. Pour les étrangers qui vivent hors de ses frontières, il s'agit d'un pays brutal, expansionniste et agressif, mais ceux qui observent au-delà de cette façade belliqueuse découvrent une société ouverte, où la force et les talents du peuple sont valorisés et cultivés.");
-                            break;
-                        case "Campagne":
-                            NomRes.setText("Camavore");
-                            ImgRes.setImageResource(R.drawable.camavore);
-                            ResultDescription.setText("Camavoran Continent or Eastern Continent is a continent on the eastern hemisphere of Runeterra. The most predominant nation on this continent was the ancient kingdom of Camavor before its fall during the Ruination of Helia. After the Ruination its history became largely unknown to the rest of the world.");
-                            break;
-                        case "Nature":
-                            NomRes.setText("Shurima");
-                            ImgRes.setImageResource(R.drawable.shurima);
-                            ResultDescription.setText("L'empire de Shurima était autrefois une civilisation florissante qui s'étendait sur un continent tout entier. Forgé en un temps révolu par les puissants dieux-guerriers de l'Ost des Transfigurés, il scella l'union de tous les peuples disparates du sud et imposa entre eux une paix durable.");
-                            break;
-                    }
-                }
-            }else if (Res1.equals("Hiver")) {
-                Log.d(Log_TAG, "Lancement du if Hiver");
-                if (Res2.equals("Mer")) {
-                    switch (Res3) {
-                        case "Ville":
-                            NomRes.setText("Bildgewater");
-                            ImgRes.setImageResource(R.drawable.bilgewater);
-                            ResultDescription.setText("Nichée dans l'archipel des Îles de la Flamme bleue, Bilgewater est une ville portuaire semblable à nulle autre : elle abrite les pêcheurs de serpents de mer, les gangs des docks et tous les contrebandiers du monde. Ici, les fortunes se font et les ambitions meurent en une fraction de seconde. Pour ceux qui fuient la justice, l'endettement ou la persécution, Bilgewater peut être le lieu d'un nouveau départ, car nul ici ne vous questionne sur votre passé. Pourtant, chaque matin, on retrouve dans les eaux du port des cadavres de voyageurs, la bourse vide et la gorge tranchée…");
-                            break;
-                        case "Campagne":
-                            NomRes.setText("Iles obscur");
-                            ImgRes.setImageResource(R.drawable.ilesobscur);
-                            ResultDescription.setText("Cette terre maudite était autrefois une civilisation noble et éclairée, connue auprès de ses alliés et de ses émissaires sous le nom d'Îles bénies. Cependant, il y a plus d'un millier d'années, un cataclysme magique sans précédent réduisit en lambeaux la frontière entre le monde physique et le royaume spirituel, entraînant leur fusion... et condamnant instantanément tous les êtres vivants.");
-                            break;
-                        case "Nature":
-                            NomRes.setText("Ionia");
-                            ImgRes.setImageResource(R.drawable.ionia);
-                            ResultDescription.setText("Entourée de mers capricieuses, Ionia est composée de plusieurs provinces alliées réparties à travers un gigantesque archipel appelé les Terres premières. La culture ionienne s'est développée dans le but de maintenir l'équilibre universel, et par conséquent, la frontière entre le monde matériel et le monde spirituel y est plus perméable, particulièrement dans les montagnes et les forêts sauvages.");
-                            break;
-                    }
-                } else if (Res2.equals("Montagne")) {
-                    switch (Res3) {
-                        case "Ville":
-                            NomRes.setText("Demacia");
-                            ImgRes.setImageResource(R.drawable.demacia);
-                            ResultDescription.setText("Demacia est un royaume fort, fondé sur des lois strictes et riche d'un passé militaire prestigieux. Ses habitants ont toujours attaché une grande importance aux idéaux de justice, d'honneur et de devoir, et ils sont très fiers de leur héritage culturel. Mais malgré ses valeurs très nobles, cette nation parfaitement autosuffisante est devenue de plus en plus insulaire et isolationniste au cours de ces derniers siècles.");
-                            break;
-                        case "Campagne":
-                            NomRes.setText("Targon");
-                            ImgRes.setImageResource(R.drawable.targon);
-                            ResultDescription.setText("Du haut de son imposante aiguille de pierres stériles, le Mont Targon est le point culminant de la plus haute chaîne de montagnes de Runeterra. S'élevant aux confins de toute civilisation, il n'est accessible qu'aux explorateurs les plus déterminés. De nombreuses légendes entourent le Mont Targon, et comme tous les lieux mythologiques, il enflamme l'imagination des rêveurs, des fous, de tous ceux qui sont assoiffés d'aventure");
-                            break;
-                        case "Nature":
-                            NomRes.setText("Frejlord");
-                            ImgRes.setImageResource(R.drawable.frejlord);
-                            ResultDescription.setText("Freljord est une terre inhospitalière et hostile dont les habitants sont des guerriers-nés, contraints de persévérer envers et contre tout.");
-                            break;
-                    }
-                }
-            }
-        }else if (test==2){
-            // résultat test 2
+        // Récupérez les valeurs des Spinners à partir des SharedPreferences.
+        //question taille
+        String savedValue1 = sharedPreferences.getString("spinnerValue1", "");
+        //question communauté
+        String savedValue2 = sharedPreferences.getString("spinnerValue2", "");
+        //question nature
+        String savedValue3 = sharedPreferences.getString("spinnerValue3", "");
+
+
+        incrementerScore(savedValueSeekbar1); // Incrémentez le score avec Seekbar1 (taille 1 à 10)
+        incrementerScore(savedValueSeekbar2); // Incrémentez le score avec Seekbar2 (magie 1 à 10)
+        //question taille
+        if (savedValue1.equals("Yes")) {
+            incrementerScore(5);
+        } else if (savedValue1.equals("No")){
+            incrementerScore(0);
         }
 
+        int score1 = getScore();
+        Log.d(Log_TAG, "Question caractéristique physique réponse ="+savedValue1+" Score actuel : " + score1);
 
+        //question communauté
+        if (savedValue2.equals("I like living in community")) {
+            incrementerScore(10);
+        } else if (savedValue2.equals("I prefer to be alone")) {
+            incrementerScore(0);
+        } else if (savedValue2.equals("I prefer to live in a small group")) {
+        incrementerScore(5);
+        }
+
+        int score2 = getScore();
+        Log.d(Log_TAG, "Question communauté réponse ="+savedValue2+"  actuel : " + score2);
+
+        //question nature
+        if (savedValue3.equals("I have a connection with nature and animals")) {
+            incrementerScore(5);
+        } else if (savedValue3.equals("Im not close to nature")) {
+            incrementerScore(0);
+        } else if (savedValue3.equals("I can manipulate nature for my needs")) {
+            incrementerScore(10);
+        }
+
+        int scoreActuel = getScore();
+        Log.d(Log_TAG, "Question nature réponse =" +savedValue3+" Score actuel : " + scoreActuel);
+
+
+        Log.d(Log_TAG, String.valueOf(scoreActuel));
+
+        if (scoreActuel == 15) {
+                //Néant
+                NomRes.setText("Néant");
+                ImgRes.setImageResource(R.drawable.neant);
+        } else if (scoreActuel>= 10 && scoreActuel < 15) {
+                // Humain
+                NomRes.setText("Humain");
+                ImgRes.setImageResource(R.drawable.humain);
+        } else if (scoreActuel> 15 && scoreActuel <= 20) {
+                // Mort-vivant
+                NomRes.setText("Mort-vivant");
+                ImgRes.setImageResource(R.drawable.undead);
+        } else if (scoreActuel> 20 && scoreActuel < 25) {
+                // Troll
+                NomRes.setText("Troll");
+                ImgRes.setImageResource(R.drawable.troll);
+        } else if (scoreActuel> 25 && scoreActuel < 30) {
+                // Yéti
+                NomRes.setText("Yéti");
+                ImgRes.setImageResource(R.drawable.yeti);
+        } else if (scoreActuel>= 30 && scoreActuel < 35) {
+                // Minautore
+                NomRes.setText("Minautore");
+                ImgRes.setImageResource(R.drawable.minotaure);
+        } else if (scoreActuel> 35 && scoreActuel <= 40) {
+                // Golem
+                NomRes.setText("Golem");
+                ImgRes.setImageResource(R.drawable.golem);
+        } else if (scoreActuel == 35) {
+                // Yordle
+                NomRes.setText("Yordle");
+                ImgRes.setImageResource(R.drawable.yordle);
+        } else if (scoreActuel == 25) {
+                // Vastayia
+                NomRes.setText("Vastayia");
+                ImgRes.setImageResource(R.drawable.vastayia);
+        } else {
+
+        }
+
+        UserRes.setText("la race qui vous corresond est :" +NomRes);
         Retour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

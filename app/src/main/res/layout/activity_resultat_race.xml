@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color_race"
     tools:context=".resultatRace">
 
     <ImageView
@@ -61,7 +62,7 @@
         android:layout_height="202dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:text="@string/QuestionScrollview1"
+        android:text="Description de la race"
         android:textAlignment="center"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
