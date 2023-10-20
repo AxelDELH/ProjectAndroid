@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 
 public class QuestionRadio extends AppCompatActivity {
@@ -20,6 +21,9 @@ public class QuestionRadio extends AppCompatActivity {
     private String Res2;
     private String Res3;
     private String Username;
+    private ImageView ImgVil;
+    private ImageView ImgCam;
+    private ImageView ImgNat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +37,12 @@ public class QuestionRadio extends AppCompatActivity {
         this.Ville = findViewById(R.id.radioButtonVille);
         this.Nature = findViewById(R.id.radioButtonNature);
         this.Campagne = findViewById(R.id.radioButtonCamp);
+        this.ImgVil = findViewById(R.id.imageView7);
+        this.ImgCam = findViewById(R.id.imageView5);
+        this.ImgNat = findViewById(R.id.imageView6);
+        ImgVil.setImageResource(R.drawable.ville);
+        ImgCam.setImageResource(R.drawable.campagne);
+        ImgNat.setImageResource(R.drawable.nature);
 
         Resultat.setOnClickListener(new View.OnClickListener() {
             @Override

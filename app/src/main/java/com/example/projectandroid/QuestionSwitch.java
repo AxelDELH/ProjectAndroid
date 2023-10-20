@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Switch;
 
 public class QuestionSwitch extends AppCompatActivity {
@@ -17,6 +18,8 @@ public class QuestionSwitch extends AppCompatActivity {
     private String Res1;
     private String Res2;
     private String Username;
+    private ImageView ImgMon;
+    private ImageView ImgMer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +29,10 @@ public class QuestionSwitch extends AppCompatActivity {
         this.Suivant = findViewById(R.id.buttonNext);
         this.Retour = findViewById(R.id.buttonBack2);
         this.Mont = findViewById(R.id.switchMM);
+        this.ImgMon = findViewById(R.id.imageView4);
+        this.ImgMer = findViewById(R.id.imageView3);
+        ImgMon.setImageResource(R.drawable.campagne);
+        ImgMer.setImageResource(R.drawable.nature);
 
 
         Suivant.setOnClickListener(new View.OnClickListener() {

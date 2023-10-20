@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class QuestionButton extends AppCompatActivity {
     private static final String Log_TAG = "Intent Log";
@@ -14,6 +15,8 @@ public class QuestionButton extends AppCompatActivity {
     private Button Hiver;
     private Button retour;
     private String Username;
+    private ImageView ImgSum;
+    private ImageView ImgWin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,10 @@ public class QuestionButton extends AppCompatActivity {
         this.Ete = findViewById(R.id.buttonEte);
         this.Hiver = findViewById(R.id.buttonHiver);
         this.retour = findViewById(R.id.buttonBack);
+        this.ImgSum = findViewById(R.id.imageView);
+        this.ImgWin = findViewById(R.id.imageView2);
+        ImgSum.setImageResource(R.drawable.desert);
+        ImgWin.setImageResource(R.drawable.banquise);
 
         Ete.setOnClickListener(new View.OnClickListener() {
             @Override
